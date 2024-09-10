@@ -34,7 +34,7 @@ setup(
         # "aiofiles",
         # "html2image",
         # "imgkit"
-    ],  # And any other dependencies foo needs
+    ],
     entry_points={
     },
 )

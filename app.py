@@ -13,7 +13,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-# 2.get_local_ip()
+# 2.获取局域网ip
 def get_local_ip():
     import socket
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
