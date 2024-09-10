@@ -4,6 +4,7 @@
 from tornado import ioloop, web
 import logging
 from API import *
+from API.Test import *
 
 # 1.消息记录
 logging.basicConfig(
@@ -21,12 +22,6 @@ def get_local_ip():
     ip = s.getsockname()[0]
     s.close()
     return ip
-
-
-# 测试
-class Test(web.RequestHandler):
-    def get(self):
-        self.write("hello world")
 
 
 # 2.配置app路由url
